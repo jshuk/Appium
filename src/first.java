@@ -13,6 +13,11 @@ public class first extends base{
 		
 		driver = capabilities();
 		driver.findElementByXPath("//android.widget.TextView[@text='Preference']").click();
+		driver.findElementByXPath("//android.widget.TextView[@text='3. Preference dependencies']").click();
+		driver.findElementByXPath("//android.widget.CheckBox[@resource-id='android:id/checkbox']").click();
+		driver.findElementByXPath("(//android.widget.RelativeLayout)[2]").click();
+		driver.findElementByClassName("android.widget.EditText").sendKeys("Netgear");
+		driver.findElementByXPath("//*[@text='OK']").click();
 	}
 
 }
